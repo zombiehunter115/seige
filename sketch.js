@@ -9,6 +9,7 @@ var stand1,stand2;
 var ball;
 var slingShot;
 var polygon_img;
+var score = 0
 function preload(){
   polygon_img=loadImage("polygon.png");
 }
@@ -72,6 +73,7 @@ function draw() {
   textSize(20);
   fill("lightyellow");
   text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",100,30);
+  text("score:"+score,100,100 )
 
   ground.display();
   stand1.display();
@@ -113,6 +115,34 @@ function draw() {
   fill("gold");
   imageMode(CENTER)
   image(polygon_img ,ball.position.x,ball.position.y,40,40);
+  
+  block1.Score()
+  block2.Score()
+  block3.Score()
+  block4.Score()
+  block5.Score()
+  block6.Score()
+  block7.Score()
+  block8.Score()
+  block9.Score()
+  block10.Score()
+  block11.Score()
+  block12.Score()
+  block13.Score()
+  block14.Score()
+  block15.Score()
+  block16.Score()
+
+  blocks1.Score()
+  blocks2.Score()
+  blocks3.Score()
+  blocks4.Score()
+  blocks5.Score()
+  blocks6.Score()
+  blocks7.Score()
+  blocks8.Score()
+  blocks9.Score()
+
 
   slingShot.display();
 }
@@ -131,3 +161,4 @@ function keyPressed(){
         
     }
 }
+
